@@ -23,7 +23,7 @@ void receive(int bytes){
 void setup() {
 
   pinMode(LED_PIN, OUTPUT);
-  Wire.begin(9); // Debut communication I2C avec l'adresse 9 
+ Wire.begin(9); // Debut communication I2C avec l'adresse 9 
   Wire.onReceive(receive); // appeler la fonction receive lorsque le peripherique reçois une donnee
 
 }

@@ -32,4 +32,14 @@ void loop() {
   Wire.write(Intensite); // Transmission de donnees 
   Wire.endTransmission(); 
   
+  /* 
+  Si on Ajoute un autre microcontroleur comme peripherique on doit utiliser une autre adresse par exemple 8 ou 12 ou 11 et dans 
+  le code de peripherique on doit initialiser cette adress pour qu'il se communique a travers de cette adresse 
+
+  Wire.beginTransmission(11); // Debut de transmission vers l'adresse 8
+  Wire.write(Intensite); // Transmission de donnees 
+  Wire.endTransmission(); 
+
+  */ 
+  
 }
